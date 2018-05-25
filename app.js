@@ -21,6 +21,20 @@ function handleCheck(e) {
   lastChecked = e.target;
 }
 
+function createTodo() {
+  let enteredTodo = document.getElementById('new-todo');
+  let newHtml =
+  `
+  <div class="item">
+    <input type="checkbox">
+    <p>${enteredTodo.value}</p>
+  </div>
+  `;
+  const todoItems = document.querySelector('.items');
+
+  todoItems.insertAdjacentHTML('beforeend', newHtml);
+}
+
 checkboxes.forEach(checkbox => {
   checkbox.addEventListener('click', handleCheck);
 });

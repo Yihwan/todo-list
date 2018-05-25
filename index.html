@@ -14,6 +14,8 @@
 
   -->
   <div class="list">
+
+    <!-- List Header -->
     <div class="header">
       <div id="header-1">
         <span id="title">My Todos</span>
@@ -24,42 +26,45 @@
       </div>
     </div>
 
-
-    <div class="item">
-      <input type="checkbox">
-      <p>You can multi-check todos</p>
+    <!-- Actual Todo Items -->
+    <div class="items">
+      <div class="item">
+        <input type="checkbox">
+        <p>You can multi-check todos</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Check one item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Hold down your Shift key</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Check another item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Every todo in between should also be checked</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Built without any libraries</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Just regular JavaScript</p>
+      </div>
+      <div class="item">
+        <input type="checkbox">
+        <p>Have fun!</p>
+      </div>
     </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Check one item</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Hold down your Shift key</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Check another item</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Everything inbetween should also be checked</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Built without any libraries</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Just regular JavaScript</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Have fun!</p>
-    </div>
+    
     <div class="item new">
       <input id="new-todo" type="text">
-      <button id="add-todo">Add</button>
+      <button id="add-todo" onclick="createTodo()">Add</button>
     </div>
   </div>
 

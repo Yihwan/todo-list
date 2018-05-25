@@ -21,14 +21,15 @@ html {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  color: #21ce99;
 }
 
 #header-1 #title {
-  margin: 20px 20px 0 20px;
+  margin: 20px 20px 5px 20px;
 }
 
 #header-1 #todo-count {
-  margin: 20px 20px 0 20px;
+  margin: 20px 20px 5px 20px;
 }
 
 #header-2 {
@@ -66,18 +67,22 @@ input[type="checkbox"], .new-icon {
   align-items: center;
 }
 
-.new #new-todo {
+#new-todo {
   border: none;
   margin: 20px;
   font-size: 20px;
   width: 250px;
 }
 
-.new #add-todo {
+#add-todo {
   font-size: 20px;
   margin: 20px;
   border: none;
   cursor: pointer;
+}
+
+#add-todo:hover, #add-todo:active  {
+  color: #21ce99;
 }
 
 
@@ -89,5 +94,5 @@ p {
   font-family:'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  border-left: 1px solid #D1E2FF;
+  border-left: 1px solid #d6fff2;
 }

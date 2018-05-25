@@ -5,6 +5,10 @@ html {
   background:#1B1B1D;
 }
 
+*:focus {
+  outline: none;
+}
+
 .list {
   max-width:400px;
   margin:50px auto;
@@ -72,6 +76,8 @@ input[type="checkbox"], .new-icon {
 .new #add-todo {
   font-size: 20px;
   margin: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 

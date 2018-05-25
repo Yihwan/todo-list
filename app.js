@@ -2,6 +2,14 @@ const checkboxes = document.querySelectorAll('.list input[type="checkbox"]');
 
 let lastChecked;
 
+window.onload = function() {
+  document.getElementById('todo-count').innerHTML = countTodos();
+};
+
+function countTodos() {
+  return document.querySelector('.items').childElementCount;
+}
+
 function handleCheck(e) {
   let inBetween = false;
 
@@ -33,6 +41,7 @@ function createTodo() {
   const todoItems = document.querySelector('.items');
 
   todoItems.insertAdjacentHTML('beforeend', newHtml);
+  document.getElementById('todo-count').innerHTML = countTodos();
 }
 
 checkboxes.forEach(checkbox => {

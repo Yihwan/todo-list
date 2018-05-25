@@ -13,7 +13,18 @@
    When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes inbetween those two checkboxes should be checked.
 
   -->
-  <div class="inbox">
+  <div class="list">
+    <div class="header">
+      <div id="header-1">
+        <span id="title">My Todos</span>
+        <span id="todo-count">2</span>
+      </div>
+      <div id="header-2">
+        <button id="edit">Edit</button>
+      </div>
+    </div>
+
+
     <div class="item">
       <input type="checkbox">
       <p>This is an inbox layout.</p>
@@ -49,6 +60,10 @@
     <div class="item">
       <input type="checkbox">
       <p>Don't forget to tweet your result!</p>
+    </div>
+    <div class="item new">
+      <input id="new-todo" type="text">
+      <button id="add-todo">Add</button>
     </div>
   </div>
 

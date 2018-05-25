@@ -5,12 +5,35 @@ html {
   background:#1B1B1D;
 }
 
-.inbox {
+.list {
   max-width:400px;
   margin:50px auto;
   background:white;
   border-radius:5px;
   box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+}
+
+#header-1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+#header-1 #title {
+  margin: 20px 20px 0 20px;
+}
+
+#header-1 #todo-count {
+  margin: 20px 20px 0 20px;
+}
+
+#header-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#edit {
+  margin: 5px 20px;
 }
 
 .item {
@@ -29,9 +52,28 @@ input:checked + p {
   text-decoration: line-through;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], .new-icon {
   margin:20px;
 }
+
+.new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new #new-todo {
+  border: none;
+  margin: 20px;
+  font-size: 20px;
+  width: 250px;
+}
+
+.new #add-todo {
+  font-size: 20px;
+  margin: 20px;
+}
+
 
 p {
   margin:0;

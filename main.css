@@ -38,7 +38,12 @@ html {
 }
 
 #edit {
-  margin: 5px 20px;
+  margin-right: 20px;
+  padding: 0;
+  border: none;
+  color: #4FC1F9;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .item {
@@ -78,13 +83,9 @@ input[type="checkbox"], .new-icon {
   font-size: 20px;
   margin: 20px;
   border: none;
+  color: #4FC1F9;
   cursor: pointer;
 }
-
-#add-todo:hover, #add-todo:active  {
-  color: #21ce99;
-}
-
 
 p {
   margin:0;
@@ -95,4 +96,12 @@ p {
   font-size: 20px;
   font-weight: 400;
   border-left: 1px solid #d6fff2;
+}
+
+.delete {
+  position: absolute;
+  margin: 20px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  cursor: pointer;
 }
